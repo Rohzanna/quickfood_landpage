@@ -1,11 +1,47 @@
+@import url('./global.css');
+/* ------------ HEADER ------------ */
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
 .logo{
-margin-top: 40px;
+    padding: 40px 0px;
+}
+
+.nav-header{
+    display: flex;
 }
 
 .nav-header ul{
     list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-header a{
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 16px;
+}
+
+.active{
+    color: var(--color-primary) !important;
+}
+
+.btn-background-less{
+    border-radius: 10px;
+    padding: 16px 32px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    cursor: pointer;
 }
 
 .btn-header{
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
+/* ------------ FIM HEADER ------------ */
