@@ -17,11 +17,6 @@ p {
     color: var(--color-black);
 }
 
-.btn-background-less{
-    background-color: #FFFFFF;
-
-}
-
 :root{
     --color-black: #000001;
     --color-grey:#263238;
