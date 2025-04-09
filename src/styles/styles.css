@@ -96,3 +96,23 @@ main{
  }
 
 /*----------------------------------FIM MAIN------------------------------------------*/
+/*-------------------------------- WHY CHOOSE ---------------------------------------*/
+.why-choose-us{
+    text-align: center;
+    background-color: #FAFAFA;
+
+}
+
+.why-choose-us h2{
+    padding-top: 100px;
+}
+
+.choose-container{
+    display: flex;
+    padding: 60px 100px;
+}
+
+.analysis{
+    display: flex;
+}
+   
