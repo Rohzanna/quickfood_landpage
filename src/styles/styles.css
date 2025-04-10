@@ -99,6 +99,7 @@ main{
 /*-------------------------------- WHY CHOOSE ---------------------------------------*/
 .why-choose-us{
     text-align: center;
+    justify-content: center;
     background-color: #FAFAFA;
 
 }
@@ -115,4 +116,51 @@ main{
 .analysis{
     display: flex;
 }
-   
+
+/*-------------------------------- FIM WHY CHOOSE ---------------------------------------*/
+/*------------------------------------ FOOTER ------------------------------------------*/
+footer{
+    background-color: var(--color-primary);
+    gap: 284px;
+    display: flex;
+    justify-content: center;
+    padding: 64px 0;
+}
+
+.copyright p {
+    color: var(--color-white);
+}
+
+.social-icons {
+    padding: 7.47px;
+    transition: 0.4s; /* Esse cara trabalha com o tranform debaixo */
+    border-radius: 80px;
+    border: 2px solid var(--color-white);
+}
+.social-icons:hover {
+    transform: translateY(-10px);
+    background-color: var(--color-primary);
+}
+.footer-navigation {
+    display: flex;
+    gap: 97px;
+    color: var(--color-white);
+}
+
+.footer-links {
+    list-style: none;
+    font: 14px;
+}
+.footer-item {
+    color: var(--color-white);
+    text-decoration: none;
+    display: block; /* Para o 'margin-bottom funcionar' */
+    margin-bottom: 12px;
+    transition: 0.4s; /* Para o 'tansform: translateX(10px)' funcionar */
+}
+.footer-item:hover {
+    color: var(--color-primary);
+    transform: translateX(10px);
+}
+
+/*----------------------------------- FIM FOOTER ---------------------------------------*/
