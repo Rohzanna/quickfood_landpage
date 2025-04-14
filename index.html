@@ -16,16 +16,16 @@
 
 <body>
 <!---------------------------------INICIO HEADER---------------------------------------->
-    <header>
+    <header id="home">
         <div class="logo">
             <img src="./src/assets/images/logo.svg" alt="Logo Quickfood" title="Logo Quickfood">
         </div>
         <nav class="nav-header">
             <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Produts</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#product">Produts</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                    <li><a href="#about">About</a></li>
             </ul>
         </nav>
 
@@ -101,10 +101,10 @@
 <!------------------------------- FIM WHY CHOOSE ---------------------------------->
 
 <!--------------------------- SPECIAL DISHES -------------------------------------->
-<section class="special-dishes">
+<section class="special-dishes" id="product">
     <h2>Special dishes for you</h2>
 
-    <div class="Special-container">
+    <div class="special-container">
 
         <article>
             <img src="./src/assets/images/edishes1.svg" alt="Ícone carrinho de compras com moça de mãos para o alto" title="Ícone carrinho de compras" loading="lazy">
@@ -139,28 +139,28 @@
 
     <!---------------------- CARD 1 ------------------------->
         <div class="all-clients">
-            <article class="clients">
+            <article class="client">
                <img src="./src/assets/images/cliente1.svg" alt="Imagem de uma mulher com a mão abaixo do queixo">
                <h3>Jane Cooper</h3>
-               <p> I have to say, I enjoyed every single bite of the meal in (RN). I had a 3 course meal, with a couple of beers. Considering the quality, 
+               <p class="client-jane"> I have to say, I enjoyed every single bite of the meal in (RN). I had a 3 course meal, with a couple of beers. Considering the quality, 
                the price is reasonable.</p>
             </article>
     <!--------------------- FIM CARD 1 ------------------------->
 
-    <!---------------------- CARD 2 ------------------------->=
-        <article class="all-clients">
+    <!---------------------- CARD 2 ------------------------->
+        <article class="client">
              <img src="./src/assets/images/cliente2.svg" alt="Imagem do rosto de uma mulher">
              <h3>Esther Howard</h3>
-             <p> It's a great experience. The ambiance is very welcoming and charming. Amazing food and service. Staff are extremely knowledgeable and 
+             <p class="client-esther"> It's a great experience. The ambiance is very welcoming and charming. Amazing food and service. Staff are extremely knowledgeable and 
                 make great recommendations</p>
         </article>
     <!--------------------- FIM CARD 2 ------------------------->
 
     <!----------------------- CARD 3 --------------------------->
-        <article class="all-clients">
+        <article class="client">
            <img src="./src/assets/images/cliente3.svg" alt="Imagem de uma mulher com a mão abaixo do queixo">
            <h3>Guy Hawkins</h3>
-           <p> Do yourself a favor and order from this lovely restaurant. The service is unmatched. The staff truly cares about your experience.</p>
+           <p class="client-guy"> Do yourself a favor and order from this lovely restaurant. The service is unmatched. The staff truly cares about your experience.</p>
     
         </article>
         
@@ -171,41 +171,40 @@
        
 <!------------------------------- FIM SAY ABOUT US---------------------------------->
 <!---------------------------------- ABTUS ------------------------------------------>
-<section></section>
-    <div class="abt-us">
+<section class="abt-us">
+    <div class="abt-us-text" id="about">
         <h2>About Us</h2>
         <p>The best way to make it works is to have a smart list of all the restaurants and cuisines organized by location, type of food (fast food, or more gourmet dishes), 
         food preferences (vegetarian, meat lovers, any special diets like gluten-free diets), different nation's cuisine, etc.</p>
-        <button class="btn-order">Learn More</button>
+        <button class="btn-abtus">Learn More</button>
     </div>
-    <div>
+    <div class="abt-us-img">
         <img src="./src/assets/images/tabuadechurras.svg" alt="Imagem de espetinhos de carnes variadas assadas com molhos"
             title="Espetos de carnes variadas assadas com molhos">
     </div>
+</section>
 <!----------------------------------- FIM ABTUS -------------------------------------------->
 <!---------------------------------- SUBSCRIBE ------------------------------------------>
-<section>
-   <div class="subscribe">
+<section class="subscribe">
+   <div>
      <h2>Subscribe to our Newsteller</h2>
      <p>Join Us and Get Update on our Available Product</p>
    </div>
-   <div>
-    <p>Enter your email address</p>
-    <input type="email" placeholder="Enter your email address" required>
-    <button class="btn-order">Subscribe</button>
+   <div class="subscribe-email">
+        <input type="email" placeholder="Enter your email address" required>
+        <button class="btn-subs">Subscribe</button>
    </div>
 </section>
 <!----------------------------------- FIM SUBSCRIBE  -------------------------------------------->
 <!---------------------------------- FOOTER ------------------------------------------>
 <footer>
     <div>
-        <img src="/src/assets/images/QUICKFOOD_rodape.svg" alt="">
+        <img src="/quickfood_landpage/src/assets/images/QUICKFOOD_rodape.svg" alt="">
     </div>
     <div class="footer-sociais">
             <div class="social-icons"><img src="./src/assets/images/twiter.svg" alt=""></div>
             <div class="social-icons"><img src="./src/assets/images/instagran.svg" alt=""></div>
             <div class="social-icons"><img src="./src/assets/images/facebook.svg" alt=""></div>
-        </div>
     </div>
 
     <div class="footer-navigation">
@@ -213,8 +212,8 @@
             <nav>
                 <ul class="footer-links">
                     <li><a href="#" class="footer-item">Company</a></li>
-                    <li><a href="#" class="footer-item">Home</a></li>
-                    <li><a href="#" class="footer-item">Product</a></li>
+                    <li><a href="#home" class="footer-item">Home</a></li>
+                    <li><a href="#product" class="footer-item">Product</a></li>
                     <li><a href="#" class="footer-item">About Us</a></li>
                     <li><a href="#" class="footer-item">Contact</a></li>
                 </ul>
@@ -240,10 +239,10 @@
                 </ul>
             </nav>
         </div>
-        <div>
-            <div class="copyright">
+        <div class="reserved">
                 <p>All right reserved@2022</p>
         </div>
+    </div>    
 </footer>
 <!----------------------------------- FIM FOOTER -------------------------------------------->
 

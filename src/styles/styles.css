@@ -71,8 +71,7 @@ main{
 .we-deliver p{
     margin-bottom: 32px;
     color: rgba(0, 0, 1,0.6);
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: 32px;
 
  }
 
@@ -96,45 +95,230 @@ main{
  }
 
 /*----------------------------------FIM MAIN------------------------------------------*/
+/* Especia  dishes  - Inicio */
+.special-dishes {
+    text-align: center;
+    margin: 100px;
+}
+
+.special-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 60px 100px;
+}
+
+.special-container article p{
+    width: 279px;
+    margin-top: 16px;
+}
+.btn-order{
+    margin-top: 16px;
+    width: 352px;
+}
+
 /*-------------------------------- WHY CHOOSE ---------------------------------------*/
 .why-choose-us{
     text-align: center;
     justify-content: center;
     background-color: #FAFAFA;
-
 }
 
 .why-choose-us h2{
     padding-top: 100px;
 }
 
+.why-choose-us p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
 .choose-container{
     display: flex;
+    justify-content: center;
     padding: 60px 100px;
+    gap: 110px;
+}
+
+.choose-container p{
+    width: 275.3px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .analysis{
     display: flex;
+    justify-content: center;
+}
+
+.analysis div{
+    width: 400px;
+    gap: 20px;
+}
+
+.analysis h4{
+    font-size: 48px;
+}
+
+.analysis p{
+    font-size: 18px;
+    margin-bottom: 100px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /*-------------------------------- FIM WHY CHOOSE ---------------------------------------*/
+
+/*------------------------------------ SPECIAL DISHES ------------------------------------*/
+
+/*------------------------------------ FIM SPECIAL DISHES -------------------------------*/
+
+/*------------------------------------ SAY ABOUT US ------------------------------------*/
+.say-about-us{
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.say-about-us h2{
+    text-align: center;
+    padding: 100px 382px 8px;
+}
+
+.say-about-us p{
+    text-align: center;
+    margin-top: 8px;
+}
+.all-clients{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    gap: 21px;
+    padding-bottom: 100px;
+}
+
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    border-radius: 16px;
+}
+
+.client img{
+    width: 100px;
+    margin-top: 30px;
+}
+
+.client h3{
+    width: 170px;
+    margin-top: 24px;
+}
+
+.client-jane{
+    width: 319px;
+    margin-top: 16px;
+    font-size: 19px;
+    margin-bottom: 82px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.client-esther{
+    width: 333px;
+    margin-top: 16px;
+    font-size: 19px;
+    margin-bottom: 82px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.client-guy{
+    width: 348px;
+    margin-top: 16px;
+    font-size: 19px;
+    margin-bottom: 82px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/*------------------------------------ FIM SAY ABOUT US -------------------------------*/
+
+/*---------------------------------------- ABTUS ------------------------------------------*/
+.abt-us{
+    display:flex;
+    justify-content: center;
+    gap: 82px;
+}
+
+.abt-us p{
+    width: 558px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.btn-abtus{
+    width: 157px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 10px;
+    padding: 16px 32px;
+}
+/*------------------------------------ FIM ABTUS ------------------------------------------*/
+
+/*---------------------------------------- SUBSCRIBE ------------------------------------------*/
+.subscribe {    
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    padding: 100px 365px;
+    flex-direction: column;
+    
+}
+
+.subscribe h2{
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe P{
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 60px;
+    margin-top: 8px;
+}
+
+.subscribe-email{
+    border: 1px solid #C1C1C1;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    width: 610px;
+    margin-left: 200px;
+    color: black;
+}
+
+.btn-subs{
+    width: 110px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 10px;
+    padding: 16px 32px 16px 26px;
+}
+
+/*------------------------------------ FIM SUBSCRIBE ------------------------------------------*/
+
 /*------------------------------------ FOOTER ------------------------------------------*/
 footer{
     background-color: var(--color-primary);
-    gap: 284px;
+    gap: 40px;
     display: flex;
     justify-content: center;
     padding: 64px 0;
 }
 
-.copyright p {
-    color: var(--color-white);
-}
-
 .social-icons {
     padding: 7.47px;
     transition: 0.4s; /* Esse cara trabalha com o tranform debaixo */
-    border-radius: 80px;
+    border-radius: 100px;
     border: 2px solid var(--color-white);
 }
 .social-icons:hover {
@@ -159,8 +343,11 @@ footer{
     transition: 0.4s; /* Para o 'tansform: translateX(10px)' funcionar */
 }
 .footer-item:hover {
-    color: var(--color-primary);
     transform: translateX(10px);
 }
 
+.reserved p{
+    color: var(--color-white);
+    border-top: solid;
+}
 /*----------------------------------- FIM FOOTER ---------------------------------------*/
